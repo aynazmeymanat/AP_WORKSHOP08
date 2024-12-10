@@ -12,7 +12,7 @@ public class NoteBook {
 
     }
 
-    public void addNote() {
+    public static void addNote() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.print("Enter the name of the note (or 'back' to return to menu): ");
@@ -31,7 +31,7 @@ public class NoteBook {
         }
     }
 
-    public void removeNote() {
+    public static void removeNote() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             if (notes.isEmpty()) {
@@ -60,7 +60,7 @@ public class NoteBook {
         }
     }
 
-    public void viewNotes() {
+    public static void viewNotes() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             if (notes.isEmpty()) {
@@ -90,7 +90,7 @@ public class NoteBook {
         }
     }
 
-    public void exportNote() {
+    public static void exportNote() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             if (notes.isEmpty()) {
